@@ -10,7 +10,7 @@ public class Wolf extends Creature implements Movable, Aware, Aggressor{
     }
 
     public void senseNeighbors(Creature above, Creature below, Creature left, Creature right) {
-
+        System.out.println("hi");
     }
 
     Shape getShape() {
@@ -26,6 +26,6 @@ public class Wolf extends Creature implements Movable, Aware, Aggressor{
     }
 
     public void move() {
-
+        _location.x++;
     }
 }
