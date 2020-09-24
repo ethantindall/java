@@ -144,6 +144,9 @@ public class CreatureHandler
 					Aggressor a = (Aggressor)c;
 					a.attack(target);
 				}
+				if (c instanceof Creature && c instanceof Spawner) {
+					_creatures.add(((Spawner) c).spawnNewCreature());
+				}
 				
 			}
 	}

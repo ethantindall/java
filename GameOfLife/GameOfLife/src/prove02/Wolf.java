@@ -2,7 +2,7 @@ package prove02;
 import java.awt.*;
 import java.util.Random;
 
-public class Wolf extends Creature implements Movable, Aware, Aggressor{
+public class Wolf extends Creature implements Movable, Aware, Spawner, Aggressor{
 
     private int _direction = new Random().nextInt(4);
 
@@ -60,5 +60,10 @@ public class Wolf extends Creature implements Movable, Aware, Aggressor{
             default:
                 break;
         }
+    }
+    public Creature spawnNewCreature() {
+        Wolf w = new Wolf();
+        w.setLocation(new Point(_location.x-1, _location.y));
+        return w;
     }
 }
