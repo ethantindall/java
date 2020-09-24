@@ -1,28 +1,21 @@
 package tindall;
 
 public class Cruise implements Expense {
-    private Destination d;
+    private Destination _d;
 
     public Cruise(Destination d) {
-        setD(d);
+        _d = d;
     }
 
-    public void setD(Destination d) {
-        this.d = d;
-    }
-
-    public Destination getD() {
-        return this.d;
-    }
-
-    @Override
     public float getCost() {
-        if (getD() == Destination.Mexico) {
+        if (_d == Destination.Mexico) {
             return 1000;
-        } else if (getD() == Destination.Europe) {
+        } else if (_d == Destination.Europe) {
             return 2000;
-        } else {
+        } else if (_d == Destination.Japan){
             return 3000;
+        } else {
+                return 0;
         }
     }
 }

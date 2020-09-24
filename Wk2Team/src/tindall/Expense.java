@@ -1,5 +1,5 @@
 package tindall;
 
-interface Expense {
+public interface Expense {
     float getCost();
 }
