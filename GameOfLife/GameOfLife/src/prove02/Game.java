@@ -43,7 +43,7 @@ public class Game {
 		}
 
 		//add some wolves
-		for(int i = 0; i < 5; i++) {
+		for(int i = 0; i < 10; i++) {
 			Wolf w = new Wolf();
 			creatures.add(w);
 		}

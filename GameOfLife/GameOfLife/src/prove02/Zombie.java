@@ -3,8 +3,9 @@ import java.awt.*;
 
 public class Zombie extends Creature implements Movable, Aggressor {
     public void attack(Creature target) {
-        if(!(target instanceof Plant)) {
+        if((target != null) && !(target instanceof Plant)) {
             target.takeDamage(5);
+            System.out.println("dead");
         }
     }
     Shape getShape() {
