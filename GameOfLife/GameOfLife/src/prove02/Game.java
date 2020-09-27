@@ -47,7 +47,11 @@ public class Game {
 			Wolf w = new Wolf();
 			creatures.add(w);
 		}
-		
+		//add rhino
+		for(int i = 0; i < 3; i++) {
+			Rhino r = new Rhino();
+			creatures.add(r);}
+
 		// Create the world
 		_theWorld = new World(creatures);
 	}

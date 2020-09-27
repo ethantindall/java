@@ -12,21 +12,11 @@ public class Dining implements Expense{
     }
 
     public float getCost() {
-        float perday = 0;
-        switch(_d) {
-            case Mexico:
-                perday =10;
-                break;
-            case Europe:
-                perday=20;
-                break;
-            case Japan:
-                perday = 30;
-                break;
-            default:
-                perday = 0;
-                break;
-        }
+        float perday = switch (_d) {
+            case Mexico -> 10;
+            case Europe -> 20;
+            case Japan -> 30;
+        };
         return perday * _nights;
     }
 }

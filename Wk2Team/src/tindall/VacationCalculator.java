@@ -5,9 +5,9 @@ import java.util.List;
 
 import static tindall.Destination.Mexico;
 
-class VacationCalculator {
+        class VacationCalculator {
 
-    public static void main(String[] args) {
+            public static void main(String[] args) {
 
         VacationCalculator vc = new VacationCalculator();
 

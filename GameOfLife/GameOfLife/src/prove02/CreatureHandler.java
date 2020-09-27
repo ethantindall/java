@@ -1,5 +1,6 @@
 package prove02;
 
+import java.util.ArrayList;
 import java.util.Random;
 import java.awt.Point;
 import java.util.List;
@@ -17,7 +18,7 @@ public class CreatureHandler
 	int _rows;
 	int _cols;
 	Random _rand;
-	List<Creature> _creatures; 
+	List<Creature> _creatures;
 
 	/**
 	* Retrieves all of the creatures that exist in the world
@@ -115,39 +116,49 @@ public class CreatureHandler
 	* act on their implemented behaviors.
 	*/
 	public void updateCreatures() {
+		int x = 0;
 
 		// Handle all our creature behaviors here. Since we don't know ahead of time
 		// which creatures implement which behaviors, we can use the instanceof keyword
 		// to see if a given instance implements a particular interface.
-		for(Creature c : _creatures) {
-				
-				// Skip dead creatures
-				if(!c.isAlive())
-					continue;
+		List<Creature> templist = new ArrayList<Creature>();
+		for (Creature c : _creatures) {
 
-				if(c instanceof Aware) {
-					Creature above = getTarget(c, 0, -1);
-					Creature below = getTarget(c, 0, 1);
-					Creature left = getTarget(c, -1, 0);
-					Creature right = getTarget(c, 1, 0);
+			// Skip dead creatures
+			if (!c.isAlive())
+				continue;
 
-					Aware a = (Aware)c;
-					a.senseNeighbors(above, below, left, right);
-				}
+			if (c instanceof Aware) {
+				Creature above = getTarget(c, 0, -1);
+				Creature below = getTarget(c, 0, 1);
+				Creature left = getTarget(c, -1, 0);
+				Creature right = getTarget(c, 1, 0);
 
-				if(c instanceof Movable) {
-					handleMove(c);
-				}
-				
-				if(c instanceof Aggressor) {
-					Creature target = getTarget(c, 0, 0);
-					Aggressor a = (Aggressor)c;
-					a.attack(target);
-				}
-				if (c instanceof Creature && c instanceof Spawner) {
-					_creatures.add(((Spawner) c).spawnNewCreature());
-				}
-				
+				Aware a = (Aware) c;
+				a.senseNeighbors(above, below, left, right);
 			}
+
+			if (c instanceof Movable) {
+				handleMove(c);
+			}
+
+			if (c instanceof Aggressor) {
+				Creature target = getTarget(c, 0, 0);
+				Aggressor a = (Aggressor) c;
+				a.attack(target);
+			}
+
+			if (c instanceof Spawner) {
+				Spawner s = (Spawner) c;
+				Creature nw = s.spawnNewCreature();
+				if (nw != null) {
+					templist.add(nw);
+				}
+			}
+		}
+			for (Creature i : templist) {
+				_creatures.add(i);
+			}
+
+		}
 	}
-}
