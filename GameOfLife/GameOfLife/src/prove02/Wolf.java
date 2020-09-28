@@ -1,5 +1,6 @@
 package prove02;
 import java.awt.*;
+import java.util.ArrayList;
 import java.util.Random;
 
 public class Wolf extends Creature implements Movable, Aware, Spawner, Aggressor{
@@ -14,7 +15,7 @@ public class Wolf extends Creature implements Movable, Aware, Spawner, Aggressor
     }
 
     public void attack(Creature target) {
-        if(target instanceof Creature && !(target instanceof Zombie) && !(target instanceof Plant)) {
+        if(target instanceof Creature && !(target instanceof Zombie) && !(target instanceof Plant) && !(target instanceof Wolf)) {
             target.takeDamage(5);
             setReady(true);
         }
@@ -23,11 +24,11 @@ public class Wolf extends Creature implements Movable, Aware, Spawner, Aggressor
     public void senseNeighbors(Creature above, Creature below, Creature left, Creature right) {
         if ((left instanceof Animal) && !(left instanceof Zombie)) {
             _direction = 0;}
-        if ((right instanceof Animal) && !(right instanceof Zombie)) {
+        else if ((right instanceof Animal) && !(right instanceof Zombie)) {
             _direction = 1;}
-        if ((above instanceof Animal) && !(above instanceof Zombie)) {
+        else if ((above instanceof Animal) && !(above instanceof Zombie)) {
             _direction = 2;}
-        if ((below instanceof Animal) && !(below instanceof Zombie)) {
+        else if ((below instanceof Animal) && !(below instanceof Zombie)) {
             _direction = 3;}
     }
 

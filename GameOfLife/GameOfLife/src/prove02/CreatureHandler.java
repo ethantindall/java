@@ -156,8 +156,10 @@ public class CreatureHandler
 				}
 			}
 		}
-			for (Creature i : templist) {
-				_creatures.add(i);
+			for (int i=0; i < templist.size(); i++ ) {
+				_creatures.add(templist.get(i));
+				templist.remove(i);
+
 			}
 
 		}
