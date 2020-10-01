@@ -1,1 +1,1 @@
-{"pc":{"name":"VacationSteve","health":5,"mana":5,"gold":5}}
+{"pc":{"name":"RogueJuan","health":5,"mana":5,"gold":5,"equipment":{"Sword":20}}}

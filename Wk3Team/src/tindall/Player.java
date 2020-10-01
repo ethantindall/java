@@ -1,11 +1,18 @@
 package tindall;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class Player {
     private String name;
     private int health;
     private int mana;
     private int gold;
+    private Map<String, Integer> equipment = new HashMap<>();
 
+    public void addEquipment(String x, Integer y) {
+        equipment.put(x, y);
+    }
     public String getName() {
         return name;
     }

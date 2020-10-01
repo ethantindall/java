@@ -5,6 +5,7 @@ import com.google.gson.Gson;
 import java.io.*;
 import java.nio.file.Files;
 import java.nio.file.Paths;
+import java.util.Scanner;
 
 public class Game {
     private Player pc;
@@ -20,8 +21,16 @@ public class Game {
         out.println(gameJson);
         out.close();
     }
-    static Game loadGame(String filename) {
-        Player user = new Player();
+    static Game loadGame(String filename) throws FileNotFoundException {
+        //get from file
+        String data= "";
+        File file = new File(filename);
+        Scanner read = new Scanner(file);
+        while (read.hasNextLine()) {
+            data += read.nextLine();
+        }
+        Gson gson = new Gson();
+        Player user = gson.fromJson(data, Player.class);
         Game gg = new Game(user);
         return gg;
     }
