@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="9acb36be-5b88-48ff-b012-4fc9a1071edd" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/java.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameOfLife/GameOfLife/src/prove02/CreatureHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/GameOfLife/GameOfLife/src/prove02/CreatureHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameOfLife/GameOfLife/src/prove02/Wolf.java" beforeDir="false" afterPath="$PROJECT_DIR$/GameOfLife/GameOfLife/src/prove02/Wolf.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameOfLife/out/production/GameOfLife/prove02/CreatureHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/GameOfLife/out/production/GameOfLife/prove02/CreatureHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameOfLife/out/production/GameOfLife/prove02/Wolf.class" beforeDir="false" afterPath="$PROJECT_DIR$/GameOfLife/out/production/GameOfLife/prove02/Wolf.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Wk1pt3.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Wk2Team.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Wk2Team/Wk2Team.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Wk2Team/Wk2Team.iml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1i9WOz5NUprxfz3wYW0QVkwoVPg" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="tindall.Main" />
+      <module name="java" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9acb36be-5b88-48ff-b012-4fc9a1071edd" name="Default Changelist" comment="" />
+      <created>1601320261771</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1601320261771</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
