@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Wk6Prove</string>
+    <string name="city">City</string>
+    <string name="temperature">Temperature</string>
+    <string name="forecast">Forecast</string>
+
+</resources>
