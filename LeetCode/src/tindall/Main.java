@@ -30,5 +30,8 @@ public class Main {
         //selection sort
         int[] selectionSorted = SelectionSort.runSelection(testArray);
         System.out.println("Selection Sorted: " + Arrays.toString(selectionSorted));
+
+        //binary search
+        System.out.println("Binary Search: " + BinarySearch.binarySearch(selectionSorted, 2442));
     }
 }
