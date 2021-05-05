@@ -28,10 +28,15 @@ public class Main {
         //System.out.println("Quick Sorted: " + Arrays.toString(quickSorted));
 
         //selection sort
-        int[] selectionSorted = SelectionSort.runSelection(testArray);
-        System.out.println("Selection Sorted: " + Arrays.toString(selectionSorted));
+        //int[] selectionSorted = SelectionSort.runSelection(testArray);
+        //System.out.println("Selection Sorted: " + Arrays.toString(selectionSorted));
+
+        //shell sort
+        int[] shellSorted = ShellSort.runShell(testArray);
+        System.out.println("Shell Sorted: " + Arrays.toString(shellSorted));
+
 
         //binary search
-        System.out.println("Binary Search: " + BinarySearch.binarySearch(selectionSorted, 2442));
+        //System.out.println("Binary Search: " + BinarySearch.binarySearch(selectionSorted, 2443));
     }
 }
